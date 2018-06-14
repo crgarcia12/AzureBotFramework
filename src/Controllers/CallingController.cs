@@ -12,7 +12,7 @@
     {
         public CallingController() : base()
         {
-            //CallingConversation.RegisterCallingBot(callingBotService => new IVRBot(callingBotService));
+            CallingConversation.RegisterCallingBot(callingBotService => new IVRBot(callingBotService));
         }
 
         [Route("callback")]
